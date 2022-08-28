@@ -1,0 +1,7 @@
+id: boundary-pref
+type: line
+source: japan
+source-layer: jp-local-governments
+paint:
+  line-color: '#000000'
+  line-width: 1

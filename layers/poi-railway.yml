@@ -2,7 +2,7 @@ id: poi-railway
 type: symbol
 source: geolonia-gsi-custom
 source-layer: poi
-minzoom: 11
+# minzoom: 11
 filter:
   - all
   - - '=='
@@ -10,6 +10,31 @@ filter:
     - Point
   - - has
     - name
+  - - any
+    - - '=='
+      - name
+      - 和深
+    - - '=='
+      - name
+      - 田子
+    - - '=='
+      - name
+      - 田並
+    - - '=='
+      - name
+      - 紀伊有田
+    - - '=='
+      - name
+      - 串本
+    - - '=='
+      - name
+      - 紀伊姫
+    - - '=='
+      - name
+      - 古座
+    - - '=='
+      - name
+      - 紀伊田原
   - - '=='
     - class
     - railway
@@ -31,16 +56,16 @@ layout:
       - railway
     - - image
       - circle-stroked
-  icon-padding:
-    - interpolate
-    - - linear
-    - - zoom
-    - 11
-    - 50
-    - 13
-    - 30
-    - 15
-    - 2
+  # icon-padding:
+  #   - interpolate
+  #   - - linear
+  #   - - zoom
+  #   - 11
+  #   - 50
+  #   - 13
+  #   - 30
+  #   - 15
+  #   - 2
   text-field: '{name}'
   text-offset:
     - 0

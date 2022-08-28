@@ -1,0 +1,17 @@
+id: railway
+type: line
+source: gsi-japan
+source-layer: railway
+minzoom: 10
+paint:
+  line-color: '#101411'
+  line-width:
+    stops:
+      - - 6
+        - 2
+      - - 10
+        - 3
+      - - 18
+        - 4
+      - - 22
+        - 20
