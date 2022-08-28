@@ -1,0 +1,55 @@
+id: highway-motorway
+type: line
+source: gsi-japan
+source-layer: road
+minzoom: 5
+filter:
+  - any
+  - - all
+    - - '>='
+      - ftCode
+      - 2700
+    - - <
+      - ftCode
+      - 2800
+    - - '!='
+      - ftCode
+      - 2702
+    - - '!='
+      - ftCode
+      - 2703
+    - - '!='
+      - ftCode
+      - 2704
+    - - any
+      - - '=='
+        - motorway
+        - 1
+      - - '=='
+        - rdCtg
+        - 3
+  - - '=='
+    - ftCode
+    - 52703
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    - interpolate
+    - - linear
+    - - zoom
+    - 8
+    - '#4ed19e'
+    - 11
+    - '#9be0c5'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 8
+    - 0.6
+    - 11
+    - 1
+  line-width: !!inc/file layers/components/broad-road-width.yml
+

@@ -1,0 +1,29 @@
+{
+  "name": "geolonia-gsi",
+  "version": "0.1.0",
+  "description": "3D style based on default style for [Geolonia](https://geolonia.com/).",
+  "main": "style.json",
+  "scripts": {
+    "start": "charites serve style.yml --provider geolonia",
+    "build": "charites build style.yml ./docs/style.json --sprite-input ./icons --sprite-output ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoloniamaps/gsi.git"
+  },
+  "author": {
+    "name": "Geolonia Inc.",
+    "url": "https://geolonia.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoloniamaps/gsi/issues"
+  },
+  "homepage": "https://github.com/geoloniamaps/gsi#readme",
+  "devDependencies": {
+    "@unvt/charites": "^0.1.4",
+    "http-close": "^1.0.0",
+    "node-fetch": "^2.6.7",
+    "puppeteer": "^16.1.0"
+  }
+}
